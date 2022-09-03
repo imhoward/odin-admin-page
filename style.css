@@ -1,0 +1,32 @@
+body {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: repeat(5, 12em);
+    margin: 0;
+}
+
+.header-container {
+    background-color: white;
+    grid-column-start: 2;
+    grid-column: 2 / 6;
+}
+
+.sidebar-container {
+    background-color: lightblue;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row: 1 / 6;
+
+    display: grid;
+    grid-template-rows: 10% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 50%;
+    grid-template-columns: auto;
+    padding-left: 1.2em;
+    padding-top: 1em;
+}
+
+.main-content-container {
+    background-color: lightgray;
+    grid-column-start: 2;
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+}
