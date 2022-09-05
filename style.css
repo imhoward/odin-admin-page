@@ -9,6 +9,7 @@ body {
     background-color: white;
     grid-column-start: 2;
     grid-column: 2 / 6;
+    grid-row: 1;
 
     display: grid;
     grid-template-columns: repeat(10, 10%);
@@ -75,6 +76,64 @@ body {
     grid-row: 2 / 6;
 
     display: grid;
-    grid-template-columns: repeat(10, 10%);
-    grid-template-rows: auto;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+
+}
+
+.projects-block {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 30% 30% 30%;
+    margin-left: 1em;
+}
+
+.projects-heading {
+    grid-row: 1;
+}
+
+.content-block1 {
+    grid-row: 2;
+    background-color: white;
+    height: 90%;
+    width: 95%;
+}
+
+.content-block2 {
+    grid-row: 3;
+    background-color: white;
+    height: 90%;
+    width: 95%;
+}
+
+.content-block3 {
+    grid-row: 4;
+    background-color: white;
+    height: 90%;
+    width: 95%;
+}
+
+.announcements-block {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 40% 10% 40%;
+    height: 96%;
+}
+
+.announcements-heading {
+    grid-row: 1;
+}
+
+.announcements-content {
+    grid-row: 2;
+    background-color: white;
+}
+
+.trending-heading {
+    grid-row: 3;
+}
+
+.trending-content {
+    grid-row: 4;
+    background-color: white;
 }
